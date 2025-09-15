@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+#response-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#boy {
+    background-color: lightblue;
+}
+
+#girl {
+    background-color: pink;
+}
