@@ -4,17 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Vote</title>
+    <title>Baby Gender Vote</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Is M'Kenzie Having a Boy or Girl?</h1>
+    <div class="container">
+        <h1>M'Kenzie's Baby Gender Vote</h1>
+        <p class="question">What do you think? Boy or Girl?</p>
 
-    <div id="response-box">
-        <button id="boy">Boy</button>
-        <button id="girl">Girl</button>
+        <div class="vote-buttons">
+            <button class="vote-btn boy-btn" id="boy">BOY</button>
+            <button class="vote-btn girl-btn" id="girl">GIRL</button>
+        </div>
+
+        <div class="vote-message boy-message" id="boy-message">You voted for Boy! Thank you!</div>
+        <div class="vote-message girl-message" id="girl-message">You voted for Girl! Thank you!</div>
+
+        <div class="progress-container">
+            <div class="progress-bar boy-progress" id="boy-progress" style="width: 50%;"></div>
+        </div>
+
+        <div class="results">
+            <div class="result-box">
+                <div class="result-label">Boy Votes</div>
+                <div class="boy-count" id="bResults">0</div>
+                <div class="percentage" id="boy-percentage">50%</div>
+            </div>
+            <div class="result-box">
+                <div class="result-label">Girl Votes</div>
+                <div class="girl-count" id="gResults">0</div>
+                <div class="percentage" id="girl-percentage">50%</div>
+            </div>
+        </div>
+
+        <a href="results.html">
+            <button class="view-results-btn">View Detailed Results</button>
+        </a>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
